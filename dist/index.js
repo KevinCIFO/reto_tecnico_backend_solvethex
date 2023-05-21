@@ -22,7 +22,7 @@ app.get('/api/user/:id', (req, res) => {
         }
     });
 });
-app.get('/api/users', (req, res) => {
+app.get('/api/user', (req, res) => {
     database_1.default.all('SELECT * FROM users', (error, rows) => {
         if (error) {
             res.status(500).json({ error: 'Error al obtener usuarios' });
@@ -34,6 +34,9 @@ app.get('/api/users', (req, res) => {
 });
 app.post('/api/user/create', (req, res) => {
     const { username, email } = req.body;
+    if (username === 'admin') {
+        return res.status(400).json({ message: 'El nombre de usuario no puede ser admin' });
+    }
     database_1.default.run('INSERT INTO users(username, email) VALUES(?, ?)', [username, email], (error) => {
         if (error) {
             res.status(500).json({ error: 'Error al crear usuario' });
