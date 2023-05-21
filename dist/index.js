@@ -69,6 +69,9 @@ app.delete('/api/user/:id', (req, res) => {
         }
     });
 });
-app.listen(port, () => {
-    console.log(`Usando el puerto ${port} para este proyecto`);
-});
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(port, () => {
+        console.log(`Usando el puerto ${port} para este proyecto`);
+    });
+}
+exports.default = app;
