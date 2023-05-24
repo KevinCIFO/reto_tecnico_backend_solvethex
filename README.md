@@ -57,6 +57,6 @@ _Nota: Si quieres saber si ya lo tienes instalado ejecuta este comando:_
 
 ## Autor ✒️
 
-- **Kevin Larriega Palomino**  
--- kevinlarriega@gmail.com 
--- https://github.com/KevinLarriega98
+- **Nombre:** Kevin Larriega Palomino  
+- **Correo:** kevinlarriega@gmail.com 
+- **GitHub:** https://github.com/KevinLarriega98
