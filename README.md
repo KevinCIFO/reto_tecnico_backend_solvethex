@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="https://assets.solvethex.com/logo-light-accent.svg" width="400" style="background-color: black;">
+    <img src="https://media.licdn.com/dms/image/C560BAQE5kuDynLMSSw/company-logo_200_200/0/1680191024110?e=1692835200&v=beta&t=oFmtkAccfB57QKbbuFhMrLuYYNoZzh5S8FfpT5OBF5E" width="150">
 </p>
 <p align="center">
-    <img align="left" src="https://nodejs.org/static/images/logo.svg" width="150" style="background-color: black;">
+    <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width="100">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" width="50">
     <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png" width="130">
 </p>
