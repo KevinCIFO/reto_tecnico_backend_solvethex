@@ -6,6 +6,13 @@ const port = 3000
 
 app.use(express.json())
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173')
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
+    next();
+})
+
 app.get('/api/user/:id', (req, res) => {
     const userId = req.params.id
 
@@ -54,7 +61,7 @@ app.put('/api/user/:id', (req, res) => {
         if(error) {
             res.status(500).json({ error: 'Error al actualizar usuario' })
         } else {
-            res.json({ message: `Usando con id ${userId} actualizado correctamente` })
+            res.json({ message: `Usuario con id ${userId} actualizado correctamente` })
         }
     })
 })
@@ -66,7 +73,7 @@ app.delete('/api/user/:id', (req, res) => {
         if(error) {
             res.status(500).json({ error: 'Error al eliminar usuario' })
         } else {
-            res.json({ message: `Usando con id ${userId} eliminado correctamente` })
+            res.json({ message: `Usuario con id ${userId} eliminado correctamente` })
         }
     })
 })

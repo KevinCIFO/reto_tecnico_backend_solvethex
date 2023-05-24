@@ -8,6 +8,12 @@ const database_1 = __importDefault(require("./database"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.use(express_1.default.json());
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
 app.get('/api/user/:id', (req, res) => {
     const userId = req.params.id;
     database_1.default.get('SELECT * FROM users WHERE id = ?', userId, (error, row) => {
@@ -54,7 +60,7 @@ app.put('/api/user/:id', (req, res) => {
             res.status(500).json({ error: 'Error al actualizar usuario' });
         }
         else {
-            res.json({ message: `Usando con id ${userId} actualizado correctamente` });
+            res.json({ message: `Usuario con id ${userId} actualizado correctamente` });
         }
     });
 });
@@ -65,7 +71,7 @@ app.delete('/api/user/:id', (req, res) => {
             res.status(500).json({ error: 'Error al eliminar usuario' });
         }
         else {
-            res.json({ message: `Usando con id ${userId} eliminado correctamente` });
+            res.json({ message: `Usuario con id ${userId} eliminado correctamente` });
         }
     });
 });
