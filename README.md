@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://media.licdn.com/dms/image/C560BAQE5kuDynLMSSw/company-logo_200_200/0/1680191024110?e=1692835200&v=beta&t=oFmtkAccfB57QKbbuFhMrLuYYNoZzh5S8FfpT5OBF5E" width="150">
+    <img src="https://media.licdn.com/dms/image/C560BAQE5kuDynLMSSw/company-logo_200_200/0/1680191024526/solve_the_x_logo?e=1709769600&v=beta&t=kSBzTeUO1ZNd5HO5anID--5V2Lngo_dH6ZgyKE7MWEc" width="150">
 </p>
 <p align="center">
     <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width="100">
